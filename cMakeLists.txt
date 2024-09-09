@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(CryptoIdentifier)
+
+set(CMAKE_CXX_STANDARD 14)
+
+
+include_directories(include)
+
+add_executable(crypto_identifier
+    src/main.cpp
+    src/feature_extractor.cpp
+    src/classifier.cpp
+)
