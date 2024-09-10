@@ -6,7 +6,7 @@
 #include <mlpack/methods/ann/layer/layer.hpp>
 #include <mlpack/methods/ann/loss_functions/cross_entropy_error.hpp>
 #include "feature_extractor.h"
-// honestly i know only these algorithm names so goodluck if you want to add more also change feature extractor in src/main.cpp if you want to add more features
+// i know only these algorithm names so goodluck if you want to add more also change feature extractor in src/main.cpp if you want to add more features
 enum class Algorithm {
     AES, DES, RSA, MD5, SHA1, SHA256, BLOWFISH, TWOFISH, UNKNOWN
 };

@@ -57,6 +57,7 @@ std::vector<double> calculateBlockFrequencies(const std::vector<uint8_t>& data, 
         blockCounts[block]++;
     }
 
+
     std::vector<double> frequencies;
     double totalBlocks = data.size() / blockSize;
     for (const auto& pair : blockCounts) {

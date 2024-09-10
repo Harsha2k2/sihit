@@ -29,7 +29,7 @@ int main() {
     
     Classifier classifier;
     
-    //we need a pre trained model here with humongous dataset please find it dont try to create a synthetic because i tried and its waste of time
+    //we need a pre trained model here with humongous dataset please find it
     vector<Features> trainingData;
     vector<Algorithm> trainingLabels = {Algorithm::AES, Algorithm::DES, Algorithm::RSA, Algorithm::MD5,
                                         Algorithm::SHA1, Algorithm::SHA256, Algorithm::BLOWFISH};
@@ -53,7 +53,7 @@ int main() {
     
     classifier.train(trainingData, trainingLabels);
     
-    // our test file is the last file in the list because we dont have any other choice fml
+    // our test file is the last file in the list because we dont have any other choice
     string testFilepath = "../data/" + filenames.back();
     vector<uint8_t> testData = loadData(testFilepath);
     
